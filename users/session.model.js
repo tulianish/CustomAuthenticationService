@@ -8,4 +8,4 @@ var SessionSchema = new mongoose.Schema({
 SessionSchema.set('toJSON', { virtuals: true });
 
 
-module.exports = mongoose.model("abc", SessionSchema);
+module.exports = mongoose.model("session", SessionSchema);
