@@ -69,10 +69,3 @@ function _delete(req, res, next) {
         .then(() => res.json({}))
         .catch(err => next(err));
 }
-
-function isLoggedIn(req){
-    console.log(req.isAuthenticated())
-    if(req.isAuthenticated()){
-        return true;
-    }
-}
